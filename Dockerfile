@@ -1,8 +1,8 @@
 FROM ghost:latest
 
-ADD config.js .
+COPY config.js ./
 WORKDIR content/themes/iberian
-ADD . .
+COPY . ./
 
 RUN npm i -g bower
 
