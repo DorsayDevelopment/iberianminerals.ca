@@ -1,14 +1,14 @@
 <header>
 
   <div class="container row">
-    <div class="col m5">
+    <div class="col m5 hide-on-small-only">
       <h5 class="accent-color">TSX - Venture: IML</h5>
       <h5 class="accent-color">OTCQB: SLDRF</h5>
       <div class="divider"></div>
       <span class="right">Iberian Minerals Ltd.</span>
     </div>
-    <div class="col m7">
-      <a href="{{@blog.url}}" class="right"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>
+    <div class="col m7 s12">
+      <a href="{{@blog.url}}" class="blog-logo"><img src="{{@blog.logo}}" class="responsive-img" alt="Blog Logo" /></a>
     </div>
   </div>
 
@@ -16,6 +16,7 @@
     <div class="nav-wrapper container row">
 
       <ul id="nav-mobile" class="left hide-on-small-only">
+
         <li><a class="dropdown-button" href="#!" data-activates="company-dropdown">Company</a></li>
         <ul id="company-dropdown" class="dropdown-content">
           <li><a href="/company">Management</a></li>
@@ -33,6 +34,7 @@
         {{/foreach}}
 
       </ul>
+
       <form class="left">
         <div id="search-wrapper" class="input-field">
           <input id="search" type="search" required>

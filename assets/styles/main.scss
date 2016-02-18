@@ -27,3 +27,9 @@ nav {
 #company-dropdown {
   width: 200px !important;
 }
+
+.blog-logo {
+  @include medium-up {
+    float: right;
+  }
+}
