@@ -1,0 +1,22 @@
+{
+  "name": "iberian",
+  "description": "iberianminerals.ca",
+  "main": "index.js",
+  "authors": [
+    "Brycen Dorsay <bdorsay@rbauction.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/DorsayDevelopment/iberianminerals.ca",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Materialize": "materialize#^0.97.5"
+  }
+}
