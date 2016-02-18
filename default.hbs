@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <title>{{meta_title}}</title>
+  <meta name="description" content="{{meta_description}}" />
+
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+
+  {{!-- css reset --}}
+  <link rel="stylesheet" href="{{asset "styles/reset.css"}}">
+
+  {{!-- materialize --}}
+  <link rel="stylesheet" href="{{asset "libs/Materialize/dist/css/materialize.min.css"}}">
+
+  {{!-- app --}}
+  <link rel="stylesheet" type="text/css" href="{{asset "styles/main.css"}}" />
+
+  {{!-- ghost stuff --}}
+  {{ghost_head}}
+</head>
+<body class="{{body_class}} nav-closed">
+
+
+<div class="site-wrapper">
+
+  {{navigation}}
+
+  {{!-- main stuff --}}
+  {{{body}}}
+
+</div>
+
+{{!-- jQuery needs to come before `{{ghost_foot}}` so that jQuery can be used in code injection --}}
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="{{asset "libs/jquery/dist/jquery.min.js"}}"></script>
+<script src="{{asset "libs/Materialize/dist/js/materialize.min.js"}}"></script>
+
+{{ghost_foot}}
+
+</body>
+</html>

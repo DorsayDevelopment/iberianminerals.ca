@@ -1,0 +1,21 @@
+<header>
+  <nav>
+    <div class="nav-wrapper">
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        {{#foreach navigation}}
+          <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation"><a href="{{url absolute="true"}}">{{label}}</a></li>
+        {{/foreach}}
+      </ul>
+    </div>
+
+  </nav>
+
+  <div class="vertical">
+    <div class="main-header-content inner">
+      <h1 class="page-title">{{@blog.title}}</h1>
+      <h2 class="page-description">{{@blog.description}}</h2>
+    </div>
+  </div>
+
+
+</header>
