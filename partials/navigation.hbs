@@ -1,21 +1,47 @@
 <header>
-  <nav>
-    <div class="nav-wrapper">
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        {{#foreach navigation}}
-          <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation"><a href="{{url absolute="true"}}">{{label}}</a></li>
-        {{/foreach}}
-      </ul>
+
+  <div class="container row">
+    <div class="col m5">
+      <h5 class="accent-color">TSX - Venture: IML</h5>
+      <h5 class="accent-color">OTCQB: SLDRF</h5>
+      <div class="divider"></div>
+      <span class="right">Iberian Minerals Ltd.</span>
     </div>
-
-  </nav>
-
-  <div class="vertical">
-    <div class="main-header-content inner">
-      <h1 class="page-title">{{@blog.title}}</h1>
-      <h2 class="page-description">{{@blog.description}}</h2>
+    <div class="col m7">
+      <a href="{{@blog.url}}" class="right"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>
     </div>
   </div>
 
+  <nav>
+    <div class="nav-wrapper container row">
+
+      <ul id="nav-mobile" class="left hide-on-small-only">
+        <li><a class="dropdown-button" href="#!" data-activates="company-dropdown">Company</a></li>
+        <ul id="company-dropdown" class="dropdown-content">
+          <li><a href="/company">Management</a></li>
+          <li><a href="/company">Corporate Overview</a></li>
+          <li><a href="/company">Board of Directors</a></li>
+          <li><a href="/company">Advisory Board</a></li>
+          <li><a href="/company">Geological Team</a></li>
+          <li><a href="/company">Corporate Governance</a></li>
+          <li><a href="/company">Social Media</a></li>
+        </ul>
+
+
+        {{#foreach navigation}}
+          <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation"><a href="{{url absolute="true"}}">{{label}}</a></li>
+        {{/foreach}}
+
+      </ul>
+      <form class="left">
+        <div id="search-wrapper" class="input-field">
+          <input id="search" type="search" required>
+          <label for="search" style="cursor: pointer;"><i class="material-icons">search</i></label>
+          <i class="material-icons">close</i>
+        </div>
+      </form>
+
+    </div>
+  </nav>
 
 </header>

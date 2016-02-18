@@ -1,3 +1,21 @@
+nav {
+  background: #D0710B;
+  margin-top: -20px; }
 
+@media only screen and (min-width: 601px) {
+  #search-wrapper {
+    width: 100px; } }
+@media only screen and (min-width: 1200px) {
+  #search-wrapper {
+    width: 400px; } }
+
+.accent-color {
+  color: #D0710B; }
+
+.divider {
+  margin: 10px 0; }
+
+#company-dropdown {
+  width: 200px !important; }
 
 /*# sourceMappingURL=main.css.map */

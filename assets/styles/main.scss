@@ -1,0 +1,29 @@
+@import 'variables';
+@import 'mixins';
+
+nav {
+  background: $accent-color;
+  margin-top: -20px;
+}
+
+#search-wrapper {
+
+  @include medium-up {
+    width: 100px;
+  }
+  @include xlarge-up {
+    width: 400px;
+  }
+}
+
+.accent-color {
+  color: $accent-color;
+}
+
+.divider {
+  margin: 10px 0;
+}
+
+#company-dropdown {
+  width: 200px !important;
+}

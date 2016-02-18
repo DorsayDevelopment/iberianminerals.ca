@@ -17,6 +17,7 @@
 
   {{!-- materialize --}}
   <link rel="stylesheet" href="{{asset "libs/Materialize/dist/css/materialize.min.css"}}">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   {{!-- app --}}
   <link rel="stylesheet" type="text/css" href="{{asset "styles/main.css"}}" />
@@ -29,17 +30,22 @@
 
 <div class="site-wrapper">
 
+  {{!-- header --}}
   {{navigation}}
 
   {{!-- main stuff --}}
   {{{body}}}
 
+  {{!-- footer --}}
+
 </div>
 
 {{!-- jQuery needs to come before `{{ghost_foot}}` so that jQuery can be used in code injection --}}
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<!--<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>-->
 <script src="{{asset "libs/jquery/dist/jquery.min.js"}}"></script>
 <script src="{{asset "libs/Materialize/dist/js/materialize.min.js"}}"></script>
+<script src="{{asset "js/actions.js"}}"></script>
+
 
 {{ghost_foot}}
 
