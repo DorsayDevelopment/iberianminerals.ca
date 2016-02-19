@@ -16,6 +16,6 @@ WORKDIR /usr/src/ghost
 
 USER root
 
-RUN chmod -R 755 /usr/src/ghost
+RUN chmod -R 777 /usr/src/ghost
 
 CMD ["npm", "start", "--production"]
