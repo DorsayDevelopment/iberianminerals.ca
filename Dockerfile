@@ -1,7 +1,5 @@
 FROM ghost:latest
 
-RUN pkill node
-
 COPY config.js ./
 WORKDIR content/themes/iberian
 COPY . ./
